@@ -11,7 +11,9 @@ class Board extends React.Component {
   }
 
   updateBoard() {
-    //TODO
+    let board = { name: this.refs.name.value, description: this.refs.description.value }
+    this.toggleEdit();
+    this.props.updateBoard(this.props.id, board);
   }
 
   edit() {
