@@ -1,0 +1,39 @@
+%h1 Trello React Boards
+%hr
+
+= react_component 'Boards', {boards: @boards}
+
+
+
+-# - if @boards.any?
+-#   - @boards.each do |board|
+-#     = link_to board.name, board_path(board)
+-# - else
+-#   %h3 No boards, please create one!
+-#
+-# =link_to 'New board', new_board_path
+-#
+-#
+-#
+-# %div.container.black.white-text
+-#   some text
+-#
+-#   %ul
+-#     - [1,2,3,4,5].each do |number|
+-#       %li
+-#         = number
+-# -# below is a less explicit div with an id, haml defaults to div tags
+-# #content.green.white-text
+-#   %h3 Some content
+-#
+-#   %img.circle{src: 'https://c1.staticflickr.com/3/2389/2073509907_345ad52bc1.jpg'}
+-#
+-#   %a#some-id.app-link{href: '/boards', class:'app-link', data: {confirm: 'Really go to boards?'}}
+-#   = link_to 'Boards' boards_path, data: {confirm: 'Really go to boards?'}
+-#
+-#   = form_for Board.new do |f|
+-#     = f.label :name
+-#     = f.text_field :name
+-#
+-#     = f.label :description
+-#     = f.text_field :description
